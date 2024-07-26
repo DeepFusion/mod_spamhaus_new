@@ -116,7 +116,7 @@ static mod_config_t *create_config(apr_pool_t *p)
   cfg->methods = "POST,PUT,OPTIONS";
   cfg->whitelist = NULL;
   cfg->unaffected = NULL;
-  cfg->dnshost = "sbl-xbl.spamhaus.org";
+  cfg->dnshost = "zen.spamhaus.org";
   cfg->cache_ip_size = DEF_CACHE_SIZE;
   cfg->cache_ip_validity = DEF_CACHE_TIME_S;
   cfg->c_err = "Access Denied! Your IP address is blacklisted because of malicious behavior in the past.";
