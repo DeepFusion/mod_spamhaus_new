@@ -536,7 +536,7 @@ static const char *custom_err_cfg(cmd_parms *parms, void *dummy, const char *arg
 /* Configuration variables */
 static command_rec spamhaus_cmds[] = {
   AP_INIT_TAKE1("MS_Methods", looking_for, NULL, RSRC_CONF, "HTTP methods to monitor. Default Value: POST,PUT,OPTIONS"),
-  AP_INIT_TAKE1("MS_Dns", dns_to_query, NULL, RSRC_CONF, "Blacklist name server (Default: sbl-xbl.spamhaus.org)"),
+  AP_INIT_TAKE1("MS_Dns", dns_to_query, NULL, RSRC_CONF, "Blacklist name server (Default: zen.spamhaus.org)"),
   AP_INIT_TAKE1("MS_WhiteList", whitelist_conf, NULL, RSRC_CONF, "The path of your whitelist file"),
   AP_INIT_TAKE1("MS_UnaffectedDomains", unaffected_conf, NULL, RSRC_CONF, "The path of your unaffected domains file"),
   AP_INIT_TAKE1("MS_CacheSize", cachesize, NULL, RSRC_CONF, "Number of cache entries. Default: " STR(DEF_CACHE_SIZE) " Max:" STR(MAX_CACHE_SIZE)),
